@@ -101,12 +101,15 @@ button {
 .heder-logo {
   color: #4d5ae5;
 }
+
 .header-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-paramount);
+  padding-top: 24px;
+  padding-bottom: 28px;
 }
 
 .header-link:hover,
@@ -116,6 +119,22 @@ button {
 
 .header-link:active {
   color: #4d5ae5;
+}
+
+.current {
+  position: relative;
+  color: #404bbf;
+}
+
+.current::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: 0;
+  background: #404bbf;
+  border-radius: 2px;
 }
 
 .header-tel,
