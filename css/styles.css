@@ -519,6 +519,7 @@ header > .container {
 
 .menu-image {
   position: relative;
+  overflow: hidden;
 }
 
 .menu-description {
@@ -528,9 +529,22 @@ header > .container {
   left: 0;
   width: 100%;
   height: 100%;
+
+  padding-top: 40px;
+  padding-left: 32px;
+  padding-right: 32px;
+
   background-color: #4d5ae5;
   transform: translateY(100%);
   transition: transform 250ms;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+
+  letter-spacing: 0.02em;
+
+  color: #f4f4fd;
 }
 
 .menu-item:focus,
