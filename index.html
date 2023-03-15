@@ -28,7 +28,11 @@
         >
         <nav>
           <ul class="lists header-list">
-            <li><a class="header-link links current" href="./index.html">Studio</a></li>
+            <li>
+              <a class="header-link links current" href="./index.html"
+                >Studio</a
+              >
+            </li>
             <li>
               <a class="header-link links" href="./portfolio.html">Portfolio</a>
             </li>
@@ -57,7 +61,9 @@
             Effective Solutions <br />
             for Your Business
           </h1>
-          <button class="hero-btn" type="button">Order Service</button>
+          <button class="hero-btn" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!--Section №2: Benefits-->
@@ -411,6 +417,14 @@
         </ul>
       </div>
     </footer>
-  <script src="/js/modal.js"></script>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close" type="button" data-modal-close>
+          Close
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
